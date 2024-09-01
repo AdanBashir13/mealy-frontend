@@ -1,0 +1,431 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: rgb(53, 160, 209);
+  padding: 15px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar-logo img {
+  height: 40px;
+  margin-top: 10px;
+}
+
+.navbar-logo:hover {
+  color: lightgreen;
+}
+
+.navbar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-menu li {
+  margin-left: 25px;
+}
+
+.navbar-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+  color: lightgreen;
+}
+
+/* Header styling */
+.header {
+  background: url('./images/banner3.png') no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: left;
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 300px;
+  position: relative;
+}
+
+.header-content {
+  max-width: 50%;
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.header p {
+  font-size: 19px;
+}
+
+/* Footer styling */
+.footer {
+  background-color: rgb(0, 218, 98);
+  color: white;
+  padding: 20px;
+  text-align: left;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+  text-align: center;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.footer-section p,
+.footer-section ul {
+  margin: 5px 0;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section a {
+  color: blue;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* HomePage styling */
+.home-page {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.intro-section {
+  text-align: center;
+  padding: 40px;
+  background-color: white;
+  margin: 0;
+}
+
+.intro-section h2 {
+  color: rgb(2, 119, 189);
+  font-size: 40px;
+}
+
+.intro-section p {
+  color: rgb(85, 85, 85);
+  font-size: 20px;
+}
+
+.top-restaurants-section {
+  padding: 40px 20px;
+  background-color: white;
+  margin: 0;
+}
+
+.top-restaurants-section h2 {
+  color: rgb(2, 136, 209);
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.top-restaurants {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 120px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.restaurant {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(231, 227, 170, 0.151);
+}
+
+.restaurant img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.restaurant h3 {
+  color: rgb(1, 87, 155);
+}
+
+.restaurant p {
+  color: black;
+}
+
+.top-foods-section {
+  padding: 40px 20px;
+  background-color: white;
+  margin: 0;
+}
+
+.top-foods-section h2 {
+  color: rgb(2, 136, 209);
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.top-foods-carousel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 120px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.food-item {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(231, 227, 170, 0.151);
+}
+
+.food-item img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.food-item h3 {
+  color:rgb(1, 87, 155);
+}
+
+.food-item p {
+  color: black;
+}
+
+.appeal-section {
+  padding: 40px 20px;
+  background-color: rgb(232, 245, 233);
+  margin: 0;
+}
+
+.appeal-section h2 {
+  color: rgb(56, 142, 60);
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.appeal-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.appeal-item {
+  flex: 1 1 23%;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.appeal-icon {
+  font-size: 32px;
+  color: rgb(56, 142, 60);
+}
+
+.appeal-item h3 {
+  color: rgb(56, 142, 60);
+}
+
+.appeal-item p {
+  color: rgb(102, 102, 102);
+}
+
+.feature-cards-section {
+  padding: 40px 20px;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+.feature-cards-section h2 {
+  color: rgb(2, 136, 209);
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.feature-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.feature-card {
+  flex: 1 1 23%;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgb(250, 250, 250);
+  text-align: center;
+}
+
+.feature-icon {
+  font-size: 30px;
+  color: rgb(1, 87, 155);
+  margin-bottom: 10px;
+}
+
+.feature-card h3 {
+  color: rgb(1, 87, 155);
+}
+
+.feature-card p {
+  color: rgb(102, 102, 102);
+}
+
+.partner-section {
+  padding: 40px 40px;
+  background-color: rgb(235, 247, 255);
+}
+
+.partner-section h2 {
+  color: rgb(2, 119, 189);
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.partner-section p {
+  color: rgb(85, 85, 85);
+  font-size: 20px;
+}
+
+.btn-partner {
+  display: inline-block;
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(2, 136, 209);
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-partner:hover {
+  background-color: rgb(1, 87, 155);
+}
+.testimonials-partners-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 40px;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+.testimonials-container, .partners-container {
+  flex: 1;
+  margin: 0 60px;
+}
+
+.testimonials-container h2, .partners-container h2 {
+  color: rgb(1, 87, 155);
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.testimonials-container .testimonials, .partners-container .partners {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.testimonial, .partner {
+  border-left: 4px solid rgb(2, 136, 209);
+  padding-left: 20px;
+  background-color: rgb(250, 250, 250);
+  border-radius: 5px;
+}
+
+.testimonial p, .partner p {
+  color: rgb(102, 102, 102);
+}
+
+.cta-section {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(56, 142, 60);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin: 40px auto;
+  max-width: 1750px;
+}
+
+.cta-section h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: rgb(2, 136, 209);
+  color: rgb(255, 255, 255);
+}
+
+.btn:hover {
+  background-color: rgb(1, 87, 155);
+}
