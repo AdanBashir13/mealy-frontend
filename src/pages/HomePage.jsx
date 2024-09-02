@@ -150,7 +150,7 @@ const HomePage = () => {
         <section className="partner-section">
           <h2>How to Become a Partner</h2>
           <p>Join us and start offering your meals to a wider audience. Partner with us to expand your reach and increase sales.</p>
-          <a href="/become-a-partner" className="btn-partner">Become a Partner</a>
+          <a href="/signup" className="btn-partner">Become a Partner</a>
         </section>
 
         <section class="testimonials-partners-section">
@@ -159,11 +159,11 @@ const HomePage = () => {
     <div class="testimonials">
       <div class="testimonial">
         <p>"Great service and fantastic experience!"</p>
-        <p>- Customer 1</p>
+        <p>- Bruce Wayne</p>
       </div>
       <div class="testimonial">
         <p>"I love the quality and customer support!"</p>
-        <p>- Customer 2</p>
+        <p>- Mary Jane</p>
       </div>
     </div>
   </div>
@@ -173,11 +173,11 @@ const HomePage = () => {
     <div class="partners">
       <div class="partner">
         <p>"Working with this company has been a pleasure."</p>
-        <p>- Partner 1</p>
+        <p>- BurgerKing</p>
       </div>
       <div class="partner">
         <p>"Their professionalism and reliability are unmatched."</p>
-        <p>- Partner 2</p>
+        <p>- Chipotle</p>
       </div>
     </div>
   </div>
