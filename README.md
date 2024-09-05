@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Study Buddy - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+**Study Buddy** is a full-stack web application designed to help students manage their study schedules, track their progress, and collaborate with peers. This repository contains the frontend code developed with React and Redux, providing a seamless user experience.
 
-In the project directory, you can run:
+## Authors
+- Adan Bashir
+- **Collaborators**:
+1. Raymond Korir
+2. Joygladys Njeri
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+-   User registration and login with JWT authentication.
+-   Create, view, update, and delete study schedules.
+-   Track study session progress with the ability to mark sessions as completed.
+-   Join and manage study groups.
+-   Responsive design for optimal viewing on various devices.
+-   Integration with Font Awesome for icons.
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-   **React**: A JavaScript library for building user interfaces.
+-   **Redux**: State management for React applications.
+-   **React Router**: For navigation between different pages.
+-   **CORS**: Used for handling cross-origin requests between the frontend and backend.
+-   **Font Awesome**: For scalable vector icons.
+-   **CSS**: For styling the application.
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-   Node.js (version >= 14.x)
+-   npm
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1.  **Clone the repository:**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    `git clone git@github.com:AdanBashir13/mealy-frontend`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2.  **Navigate to the project directory:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    `cd src`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+3.  **Install the dependencies:**
 
-## Learn More
+    `npm install`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Running the Application
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1.  **Start the development server:**
 
-### Code Splitting
+    `npm start`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2.  Open your web browser and go to `http://localhost:3000`.
 
-### Analyzing the Bundle Size
+### API Integration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The frontend connects to the Flask backend for data storage and retrieval. Ensure the backend server is running and accessible. The backend server should be configured to handle CORS (Cross-Origin Resource Sharing) for successful communication.
 
-### Making a Progressive Web App
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### Deployment
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For any inquiries or issues regarding this code, please contact me at imdedsec1120@gmail.com.

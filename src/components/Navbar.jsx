@@ -2,11 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import MealyLogo from '../images/logo.png';
 import { useSelector } from 'react-redux';
+import Logout from './Logout';
 
 const Navbar = () => {
-  const { token, role } = useSelector((state) => state.auth);
-  const isAuthenticated = !!token;
-  const isAdmin = role === 'admin';
+  const { isAuthenticated, role } = useSelector((state) => state.auth);
 
   return (
     <nav className="navbar">
@@ -16,26 +15,27 @@ const Navbar = () => {
         </Link>
         <ul className="navbar-menu">
           <li><Link to="/">Home</Link></li>
-          {isAuthenticated && (
+          {isAuthenticated ? (
             <>
-              <li><Link to="/menu">Menu</Link></li>
-              <li><Link to="/orders">Orders</Link></li>
+              {role === 'admin' ? (
+                <>
+                  <li><Link to="/admin/meals">Manage Meals</Link></li>
+                  <li><Link to="/admin/menu">Set Up Menu</Link></li>
+                  <li><Link to="/admin/orders">View Orders</Link></li>
+                  <li><Link to="/admin/revenue">Daily Revenue</Link></li>
+                </>
+              ) : (
+                <>
+                  <li><Link to="/customer/menu">Menu</Link></li>
+                  <li><Link to="/customer/orders">Orders</Link></li>
+                </>
+              )}
+              <li><Logout /></li>
             </>
-          )}
-          {!isAuthenticated ? (
+          ) : (
             <>
               <li><Link to="/login">Login</Link></li>
               <li><Link to="/signup">Sign up</Link></li>
-            </>
-          ) : (
-            <li><Link to="/logout">Logout</Link></li>
-          )}
-          {isAdmin && (
-            <>
-              <li><Link to="/admin/meals">Manage Meals</Link></li>
-              <li><Link to="/admin/menu">Set Up Menu</Link></li>
-              <li><Link to="/admin/orders">View Orders</Link></li>
-              <li><Link to="/admin/revenue">Daily Revenue</Link></li>
             </>
           )}
         </ul>

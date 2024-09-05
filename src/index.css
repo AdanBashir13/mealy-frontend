@@ -171,46 +171,6 @@ body {
   font-size: 20px;
 }
 
-.top-restaurants-section {
-  padding: 40px 20px;
-  background-color: white;
-  margin: 0;
-}
-
-.top-restaurants-section h2 {
-  color: rgb(2, 136, 209);
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.top-restaurants {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 120px;
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.restaurant {
-  border-radius: 10px;
-  padding: 10px;
-  background-color: rgba(231, 227, 170, 0.151);
-}
-
-.restaurant img {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.restaurant h3 {
-  color: rgb(1, 87, 155);
-}
-
-.restaurant p {
-  color: black;
-}
-
 .top-foods-section {
   padding: 40px 20px;
   background-color: white;
@@ -429,3 +389,1081 @@ body {
 .btn:hover {
   background-color: rgb(1, 87, 155);
 }
+
+/* LoginPage styles */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('./images/loginbackground.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-container h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.login-container input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.login-container button:hover {
+  background-color: rgb(137, 179, 60);
+}
+
+.role-selection {
+  margin: 20px 0;
+}
+
+.role-selection label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.role-selection select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+}
+.signup-link {
+  margin-top: 20px;
+}
+
+.signup-link a {
+  color: blue;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* SignUpPage styles */
+.signup-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('./images/signupbackground.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.signup-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.signup-container h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.signup-container input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.signup-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.signup-container button:hover {
+  background-color: rgb(137, 179, 60);
+}
+
+.signup-container .role-selection {
+  margin: 20px 0;
+}
+
+.signup-container .role-selection label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.signup-container .role-selection select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.signup-container .login-link {
+  margin-top: 20px;
+}
+
+.signup-container .login-link a {
+  color: blue;
+  text-decoration: none;
+}
+
+.signup-container .login-link a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: red;
+}
+
+.success-message {
+  color: green;
+  margin-top: 10px;
+}
+
+.logout-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.logout-button:hover {
+  color: red;
+}
+
+/* AdminMealsPage Styling */
+.admin-meals-page {
+  padding: 20px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  color: rgb(2, 119, 189);
+  font-size: 36px;
+}
+
+.page-header p {
+  color: rgb(85, 85, 85);
+  font-size: 18px;
+}
+
+.admin-intro-section {
+  text-align: center;
+  padding: 30px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.admin-intro-section h2 {
+  color: rgb(2, 136, 209);
+  font-size: 28px;
+}
+
+.admin-intro-section p {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+}
+
+.overview-section {
+  padding: 30px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.overview-section h2 {
+  color: rgb(2, 136, 209);
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.overview-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.overview-card {
+  flex: 1 1 23%;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgb(250, 250, 250);
+  text-align: center;
+}
+
+.overview-icon {
+  font-size: 24px;
+  color: rgb(1, 87, 155);
+  margin-bottom: 10px;
+}
+
+.overview-card h3 {
+  color: rgb(1, 87, 155);
+  font-size: 20px;
+}
+
+.overview-card p {
+  color: black;
+}
+
+.add-manage-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.add-meal-section,
+.manage-meals-section {
+  padding: 30px;
+  background-color: rgb(245, 245, 245);
+}
+
+.add-meal-section h2,
+.manage-meals-section h2 {
+  color: rgb(2, 136, 209);
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 5px;
+}
+
+.form-group button {
+  padding: 10px;
+  background-color: rgb(3, 133, 9);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background-color: rgb(30, 175, 25);
+}
+
+.manage-meals-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.manage-meals-section li {
+  border-bottom: 1px solid rgb(200, 200, 200);
+  padding: 10px 0;
+}
+
+.manage-meals-section button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: rgb(0, 150, 136);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* AdminMenuPage Sstyling */
+.admin-menu-page {
+  padding: 20px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  color: rgb(2, 119, 189);
+  font-size: 36px;
+}
+
+.page-header p {
+  color: rgb(85, 85, 85);
+  font-size: 18px;
+}
+
+.tutorial-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.tutorial-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  color: rgb(2, 119, 189);
+}
+
+.tutorial-icon span {
+  margin-top: 5px;
+  font-size: 14px;
+  color: rgb(1, 87, 155);
+}
+
+.meal-selection-section {
+  padding: 30px;
+  background-color: rgb(245, 245, 245);
+  margin-bottom: 20px;
+}
+
+.meal-selection-section h2 {
+  color: rgb(2, 136, 209);
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.meal-option {
+  flex: 1 1 45%;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meal-option span {
+  font-size: 16px;
+}
+
+.meal-option button {
+  padding: 5px 10px;
+  background-color: rgb(3, 133, 9);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.meal-option button:hover {
+  background-color: rgb(30, 175, 25);
+}
+
+.current-menu-section li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.set-menu-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: rgb(3, 133, 9);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.set-menu-button:hover {
+  background-color: rgb(30, 175, 25);
+}
+
+.daily-menu-section {
+  padding: 30px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.daily-menu-section h2 {
+  color: rgb(2, 136, 209);
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.daily-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.daily-menu-item {
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.daily-menu-item span {
+  font-size: 16px;
+  color: rgb(85, 85, 85);
+}
+
+.daily-menu-item button {
+  padding: 5px 10px;
+  background-color: rgb(3, 133, 9);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.daily-menu-item button:hover {
+  background-color: rgb(30, 175, 25);
+}
+
+.daily-menu-section p {
+  text-align: center;
+  color: rgb(85, 85, 85);
+  font-size: 16px;
+}
+
+
+/* AdminOrdersPage Styling*/
+.admin-orders-page {
+  padding: 20px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  color: rgb(2, 119, 189);
+  font-size: 36px;
+}
+
+.page-header p {
+  color: rgb(85, 85, 85);
+  font-size: 18px;
+}
+
+.admin-intro-section {
+  text-align: center;
+  padding: 30px;
+  background-color: rgb(240, 248, 255);
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.admin-intro-section h2 {
+  color: rgb(2, 136, 209);
+  font-size: 28px;
+}
+
+.admin-intro-section p {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+}
+
+.orders-summary-section,
+.orders-section {
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.orders-summary-section h2,
+.orders-section h2 {
+  color: rgb(2, 136, 209);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.orders-section {
+  padding: 20px;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders-table th, .orders-table td {
+  border: 1px solid rgb(200, 200, 200);
+  padding: 12px;
+  text-align: left;
+}
+
+.orders-table th {
+  background-color: rgb(2, 119, 189);
+  color: rgb(255, 255, 255);
+}
+
+.orders-table tr:nth-child(even) {
+  background-color: rgb(240, 240, 240);
+}
+
+.orders-table tr:hover {
+  background-color: rgb(220, 220, 220);
+}
+
+.status-button, .details-button, .delete-button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.status-button {
+  background-color: rgb(2, 136, 209);
+  color: white;
+}
+
+.status-button:hover {
+  background-color: rgb(1, 87, 155);
+}
+
+.details-button {
+  background-color: rgb(2, 136, 209);
+  color: white;
+}
+
+.details-button:hover {
+  background-color: rgb(1, 87, 155);
+}
+
+.delete-button {
+  background-color: rgb(244, 67, 54);
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: rgb(186, 28, 36);
+}
+
+.order-details-section {
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-details-section h2 {
+  color: rgb(2, 136, 209);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.order-details-section p {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.close-details-button {
+  padding: 8px 16px;
+  background-color: rgb(200, 200, 200);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.close-details-button:hover {
+  background-color: rgb(180, 180, 180);
+}
+
+.orders-actions-section {
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.orders-actions-section h2 {
+  color: rgb(2, 136, 209);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.orders-actions-section button {
+  border-radius: 4px;
+  border: 1px solid rgb(200, 200, 200);
+}
+
+.bulk-update-button {
+  background-color: rgb(89, 240, 114);
+  color: white;
+  border: none;
+  margin-right: 10px;
+}
+
+.bulk-delete-button {
+  background-color: rgb(240, 119, 89);
+  color: white;
+  border: none;
+  margin-right: 10px;
+}
+
+.bulk-update-button:hover {
+  background-color: rgb(15, 134, 4);
+}
+
+.bulk-delete-button:hover {
+  background-color: rgb(172, 27, 8);
+}
+
+/* AdminRevenuePage Styling */
+.admin-revenue-page {
+  padding: 30px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.revenue-page-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.revenue-page-header h1 {
+  font-size: 36px;
+  color: rgb(1, 87, 155);
+}
+
+.revenue-page-header p {
+  font-size: 18px;
+  color: rgb(85, 85, 85);
+}
+
+.revenue-summary {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.revenue-summary h2 {
+  font-size: 28px;
+  color: rgb(2, 136, 209);
+  margin-bottom: 10px;
+}
+
+.revenue-summary-details p {
+  font-size: 18px;
+  color: rgb(0, 102, 204);
+  margin: 5px 0;
+}
+
+.revenue-breakdown {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.revenue-breakdown h2 {
+  font-size: 28px;
+  color: rgb(2, 136, 209);
+  margin-bottom: 10px;
+}
+
+.revenue-breakdown-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.revenue-breakdown-table th, .revenue-breakdown-table td {
+  border: 1px solid rgb(204, 204, 204);
+  padding: 10px;
+  text-align: left;
+}
+
+.revenue-breakdown-table th {
+  background-color: rgb(0, 51, 102);
+  color: rgb(255, 255, 255);
+}
+
+.revenue-breakdown-table tr:nth-child(even) {
+  background-color: rgb(240, 240, 240);
+}
+
+.revenue-breakdown-table tr:hover {
+  background-color: rgb(220, 220, 220);
+}
+
+.revenue-tips-analysis-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.revenue-tips,
+.revenue-analysis {
+  flex: 1;
+  background-color: rgb(245, 245, 245);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.revenue-tips h2,
+.revenue-analysis h2 {
+  font-size: 28px;
+  color: rgb(2, 136, 209);
+  margin-bottom: 10px;
+}
+
+.revenue-tips ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.revenue-tips li {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+.revenue-analysis p {
+  font-size: 16px;
+  color: rgb(85, 85, 85);
+  margin-bottom: 10px;
+}
+
+/* CustomerMenuPage Styling */
+.customer-menu-page {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.page-header h1 {
+  font-size: 2.5em;
+  color: #2c3e50;
+}
+
+.page-header p {
+  font-size: 1.2em;
+  color: #7f8c8d;
+}
+
+.daily-menu-section {
+  margin: 20px 0;
+}
+
+.daily-menu-section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #2980b9;
+}
+
+.daily-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.daily-menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ecf0f1;
+  padding: 10px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+}
+
+.order-controls {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.order-controls button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.special-highlights-section {
+  margin: 20px 0;
+  background-color: #ecf0f1;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.special-highlights-section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #e67e22;
+}
+
+.special-highlights-section p {
+  font-size: 1.1em;
+  color: #2c3e50;
+}
+
+.special-highlights-section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.special-highlights-section li {
+  font-size: 1em;
+  color: #34495e;
+}
+
+.customer-reviews-section {
+  margin: 20px 0;
+}
+
+.customer-reviews-section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #e74c3c;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.review-item {
+  background-color: #ecf0f1;
+  padding: 10px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+}
+
+/* AdminOrdersPage Styling */
+.order-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.order-controls button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 1.2em;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+.order-controls button:hover {
+  background-color: #2ecc71;
+}
+
+.order-controls span {
+  font-size: 1.2em;
+  margin: 0 10px;
+}
+
+.daily-menu-item button:last-of-type {
+  background-color: #2980b9;
+  padding: 10px 20px;
+  font-size: 1em;
+  white-space: nowrap;
+  width: fit-content;
+  text-align: center;
+}
+
+.daily-menu-item button:last-of-type:hover {
+  background-color: #3498db;
+}
+
+.notification {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #e74c3c;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/*CustomerOrdersPage Styling*/
+.orders-page {
+  padding: 30px;
+  margin: 0 auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+  background-color: rgb(249, 249, 249);
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  font-size: 48px;
+  color: rgb(44, 62, 80);
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  font-size: 20px;
+  color: rgb(127, 140, 141);
+}
+
+.orders-list {
+  margin: 20px 0;
+}
+
+.order-item {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+  border: 1px solid rgb(189, 195, 199);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-item span {
+  font-size: 18px;
+  color: rgb(44, 62, 80);
+  margin-bottom: 8px;
+  display: block;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.order-item span:nth-child(1) {
+  background-color: rgb(245, 245, 245);
+}
+
+.order-item span:nth-child(2) {
+  background-color: rgb(250, 250, 250);
+}
+
+.order-item span:nth-child(3) {
+  background-color: rgb(245, 245, 245);
+}
+
+.order-item span:nth-child(4) {
+  background-color: rgb(250, 250, 250);
+}
+
+.order-item span:nth-child(5) {
+  background-color: rgb(245, 245, 245);
+}
+
+
+.total-price {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(189, 195, 199);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.total-price h2 {
+  font-size: 28px;
+  color: rgb(41, 128, 185);
+  text-align: center;
+  margin: 0;
+}
+
+.notification {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: rgb(39, 174, 96);
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
