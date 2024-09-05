@@ -5,7 +5,8 @@
 **Study Buddy** is a full-stack web application designed to help students manage their study schedules, track their progress, and collaborate with peers. This repository contains the frontend code developed with React and Redux, providing a seamless user experience.
 
 ## Authors
-- Adan Bashir
+Adan Bashir
+
 - **Collaborators**:
 1. Raymond Korir
 2. Joygladys Njeri
