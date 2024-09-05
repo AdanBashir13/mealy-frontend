@@ -7,7 +7,7 @@
 ## Authors
 Adan Bashir
 
-- **Collaborators**:
+**Collaborators**:
 1. Raymond Korir
 2. Joygladys Njeri
 
